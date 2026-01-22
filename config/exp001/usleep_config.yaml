@@ -1,0 +1,117 @@
+defaults:
+  - ../base_config@_global_
+  - _self_
+
+# data seed, model seed, training seed
+seeds: [ null, null, null ]
+
+data:
+  channel_num: 2
+  path: '/path/to/your/processed_data.h5'
+  train_dataloader:
+    _target_: base.data.data_loader.CustomDataloader
+    batch_size: 64
+    shuffle: False
+    num_workers: 20
+    seed: ${seeds[0]}
+    dataset:
+      _target_: base.data.usleep_train_dataset.UsleepTrainDataset
+      h5_path: ${data.path}
+      window_size: 35
+      num_of_samples: 28571 # Approximated from Steps per Epoch = 443 ( amounts to roughly 10^6 30s Segments)
+      # For T = 35 this would be 10^6 / 35 approx 28571
+  earlystopping_dataloader:
+    _target_: base.data.data_loader.CustomDataloader
+    batch_size: 1
+    shuffle: False
+    num_workers: 20
+    seed: ${seeds[0]}
+    dataset:
+      _target_: base.data.usleep_eval_dataset.UsleepEvalDataset
+      h5_path: ${data.path}
+      datasplit: 'val'
+      all_channels: False
+      eeg_eog_only: True
+  test_dataloader:
+    _target_: base.data.data_loader.CustomDataloader
+    batch_size: 1
+    shuffle: False
+    num_workers: 20
+    seed: ${seeds[0]}
+    dataset:
+      _target_: base.data.usleep_eval_dataset.UsleepEvalDataset
+      h5_path: ${data.path}
+      datasplit: 'test'
+      all_channels: True
+      eeg_eog_only: True
+
+model:
+  _target_: base.model.usleep.USleep
+  path: null
+  seed: ${seeds[1]}
+  depth: 12
+  scale: 1.4142
+
+training:
+  lr_scheduler: # no lr scheduling
+    _target_: base.training.lr_scheduler.CyclicCosineDecayLR
+    init_decay_epochs: 1
+    min_decay_lr_multiplier: 1.0
+    restart_interval: null
+    restart_interval_multiplier: null
+    restart_lr_multiplier: null
+    warmup_epochs: null
+    warmup_start_lr_multiplier: null
+  optimizer:
+    _target_: torch.optim.Adam
+    weight_decay: 0
+    betas: [ 0.9,0.999 ]
+    amsgrad: true  # set in U-Time code
+  trainer:
+    _target_: base.training.clas_trainer.ClasTrainer
+    epochs: 10000
+    clip_gradients: 0
+    early_stopping_epochs: 100
+    dataloader: ${data.train_dataloader}
+    model: ${model}
+    log_interval: 10
+    lr: 1e-5
+    train_result_tracker:
+      _target_: base.results.sleep_stage_tracker.SleepStageResultTracker
+      filename: 'usleep_train_results.json'
+      track_datasplit: True
+      track_datasets: True
+      track_channels: False
+      track_recordings: False
+      do_majority_voting: False
+    evaluators:
+      early_stopping: ${evaluators.earlystopping}
+    seed: ${seeds[2]}
+
+evaluators:
+  earlystopping:
+    _target_: base.evaluation.clas_evaluator.ClasEvaluator
+    name: earlystopping
+    dataloader: ${data.earlystopping_dataloader}
+    result_tracker:
+      sleep_stages:
+        _target_: base.results.sleep_stage_tracker.SleepStageResultTracker
+        filename: 'usleep_earlystopping_results.json'
+        track_datasplit: True
+        track_datasets: True
+        track_channels: False
+        track_recordings: False
+        do_majority_voting: True
+  test:
+    _target_: base.evaluation.clas_evaluator.ClasEvaluator
+    name: test
+    dataloader: ${data.test_dataloader}
+    result_tracker:
+      sleep_stages:
+        _target_: base.results.sleep_stage_tracker.SleepStageResultTracker
+        filename: 'usleep_test_results.json'
+        track_datasplit: True
+        track_datasets: True
+        track_channels: True
+        track_recordings: False
+        do_majority_voting: True

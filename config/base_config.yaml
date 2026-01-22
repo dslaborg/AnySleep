@@ -1,0 +1,35 @@
+defaults:
+  - _self_
+
+hydra:
+  run:
+    dir: ./logs/${hydra.job.config_name}/${now:%Y-%m-%d_%H-%M-%S}  # format of timestamp is Year-Month-Day so the folders are ordered correctly
+  job:
+    chdir: True
+  job_logging:
+    formatters:
+      simple:
+        format: '[%(asctime)s][%(levelname)s][%(module)s:%(lineno)d] - %(message)s'
+
+general:
+  device: 'cuda'
+  snapshot_dir: './models'
+  results_dir: null  # use current working dir
+  async_results: False
+
+name: None
+data:
+  sampling_rate: 128
+  epoch_duration: 30
+  stages: { 0: 'Wake', 1: 'N1', 2: 'N2', 3: 'N3', 4: 'REM' }  # keys are the encodings of the stages in the labels
+
+  train_dataloader: null
+  valid_dataloader: null
+  test_dataloader: null
+
+model: null
+
+training:
+  lr_scheduler: null
+  optimizer: null
+  trainer: null

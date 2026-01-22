@@ -1,0 +1,32 @@
+# IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Cache
+cache/
+.cache/
+
+# Logs
+logs
+
+# Config
+pyrightconfig.json
+
+# Data files (too large for git)
+*.h5
+*.hdf5
+*.edf
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Local config
+.env

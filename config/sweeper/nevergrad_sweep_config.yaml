@@ -1,0 +1,17 @@
+defaults:
+  - override /hydra/sweeper: nevergrad
+
+hydra:
+  sweep:
+    dir: ./logs/${hydra.job.config_name}/sweep-${now:%Y-%m-%d_%H-%M-%S}  # format of timestamp is Year-Month-Day so the folders are ordered correctly
+  sweeper:
+    optim:
+      maximize: true
+      # name of the nevergrad optimizer to use
+      # OnePlusOne is good at low budget, but may converge early
+#      optimizer: OnePlusOne
+      optimizer: RandomSearch
+      # total number of function evaluations to perform
+      budget: 20
+      # number of parallel workers for performing function evaluations
+      num_workers: 1
