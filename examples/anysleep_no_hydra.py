@@ -94,14 +94,7 @@ class AnySleep(nn.Module):
         )
 
         pool_size = int(epoch_length / sleep_stage_frequency)
-        self.segment_classifier = nn.Sequential(
-            nn.Conv1d(cs_dec[-1], cs_dec[-1], 1, padding="same"),
-            nn.Tanh(),
-            nn.AvgPool1d(pool_size, stride=pool_size),
-            nn.Conv1d(cs_dec[-1], 5, 1, padding="same"),
-            nn.ELU(inplace=True),
-            nn.Conv1d(5, 5, 1, padding="same"),
-        )
+        self.segment_classifier = SegmentClassifier(pool_size, cs_dec[-1])
 
         self.skip_connections = nn.ModuleList(
             [SkipConnectionBlock(cs_enc[i], hidden_size) for i in range(1, len(cs_enc))]
@@ -245,3 +238,48 @@ class SkipConnectionBlock(nn.Module):
         # x_out shape (batch, filters, time)
 
         return x_out
+
+
+class SegmentClassifier(nn.Module):
+    """
+    Classification head that pools to epoch resolution and predicts sleep stages.
+
+    Performs:
+    1. Conv1d → Tanh (feature transformation)
+    2. AvgPool to pool from sample to epoch resolution
+    3. Conv1d → ELU → Conv1d (classification layers)
+
+    The pooling size is calculated as:
+        pool_size = sampling_rate * epoch_duration / sleep_stage_frequency
+
+    For 128 Hz, 30s epochs, and 1 prediction per epoch: pool_size = 3840
+
+    Args:
+        pool_size (int): Number of predictions to pool into a single predicted label.
+        n_filters (int): Number of input feature channels.
+    """
+
+    def __init__(self, pool_size, n_filters):
+        super(SegmentClassifier, self).__init__()
+
+        self.segment_classifier = nn.Sequential(
+            nn.Conv1d(n_filters, n_filters, 1, padding="same"),
+            nn.Tanh(),
+            nn.AvgPool1d(pool_size, stride=pool_size),
+            nn.Conv1d(n_filters, 5, 1, padding="same"),
+            nn.ELU(inplace=True),
+            nn.Conv1d(5, 5, 1, padding="same"),
+            # nn.Softmax(dim=1) # Not needed as CrossEntropyLoss already applies softmax
+        )
+
+    def forward(self, x):
+        """
+        Forward pass through the segment classifier.
+
+        Args:
+            x (torch.Tensor): Input of shape (batch, filters, time_samples).
+
+        Returns:
+            torch.Tensor: Logits of shape (batch, 5, num_epochs).
+        """
+        return self.segment_classifier(x)
