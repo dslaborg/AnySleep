@@ -18,6 +18,38 @@ pip install -r requirements.txt
 # see https://pytorch.org/get-started/locally/
 ```
 
+## Git LFS
+
+Log files, model checkpoints, and model outputs are stored with [Git LFS](https://git-lfs.com/) instead of directly in
+the repository.
+
+This means that a normal `git clone` only fetches small *pointer files* (a few hundred bytes) instead of the actual
+binary content. If you try to use these files directly, you will instead see LFS pointer text like the following:
+
+```text
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b41e3...
+size 123456789
+```
+
+To install Git LFS and configure your local git, run:
+
+```bash
+git lfs install
+```
+
+If you have already cloned (or pulled) before installing it, download the actual file contents with:
+
+```bash
+git lfs pull
+```
+
+To check which files are tracked by LFS and whether the real content or only the pointer is present locally, use:
+
+```bash
+git lfs ls-files         # lists LFS-tracked files ('-': content, '*': pointer only)
+```
+
 ## Inference on EDF Files
 
 For running inference on your own EDF files without the full training pipeline, use the standalone scripts in
@@ -58,7 +90,8 @@ To reproduce the results from the paper:
 
 1. Prepare the data using the [Sleep Datasets](https://github.com/dslaborg/Sleep-Datasets) repository
 2. Follow the instructions in `config/exp00X/run.md` for each experiment, which contain the exact commands for training
-   and evaluation
+   and evaluation. Each command is mapped to an output dir in `logs` and a script in `scripts/final-figures` that uses
+   the results.
 
 ### Data Preparation
 
@@ -117,7 +150,7 @@ Arguments:
 Sample call:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python scripts/train.py -cn=exp001/exp001a
+python scripts/train.py -cn=exp001/exp001a
 ```
 
 #### evaluate.py
@@ -134,7 +167,7 @@ Arguments:
 Sample call:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python scripts/evaluate.py -cn=exp001/exp001a \
+python scripts/evaluate.py -cn=exp001/exp001a \
     model.path="your_model.pth" \
     +training.trainer.evaluators.test="\${evaluators.test}"
 ```
@@ -154,7 +187,7 @@ Arguments:
 Sample call:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python scripts/predict-high-freq.py -cn=exp002/exp002a \
+python scripts/predict-high-freq.py -cn=exp002/exp002a \
     +high_freq_predict.dataloader="\${data.test_dataloader}" \
     model.path="your_model.pth" \
     model.sleep_stage_frequency=1
@@ -173,7 +206,7 @@ this preserves the full probability distribution rather than just the predicted 
 Sample call:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python scripts/predict-high-freq_full_logits.py -cn=exp002/exp002a \
+python scripts/predict-high-freq_full_logits.py -cn=exp002/exp002a \
     +high_freq_predict.dataloader="\${data.test_dataloader}" \
     model.path="your_model.pth" \
     model.sleep_stage_frequency=1
@@ -186,13 +219,13 @@ Output files:
 
 #### predict-confusion-matrix.py
 
-Generates per-recording confusion matrices for detailed error analysis. Computes a 5×5 confusion matrix for each
+Generates per-recording confusion matrices for detailed error analysis. Computes a 5x5 confusion matrix for each
 recording and channel combination.
 
 Sample call:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python scripts/predict-confusion-matrix.py -cn=exp002/exp002a \
+python scripts/predict-confusion-matrix.py -cn=exp002/exp002a \
     model.path="your_model.pth" \
     +predict_cm.dataloader="\${data.test_dataloader}"
 ```
@@ -207,8 +240,8 @@ Output files:
 |------------|-----------------------------------------------------|
 | exp001     | Original USleep architecture                        |
 | exp002     | AnySleep with channel attention on skip connections |
-| exp003     | AnySleepEF (attention before encoder)               |
-| exp004     | AnySleepLF (attention after decoder)                |
+| exp003     | AnySleepEF (early fusion, attention before encoder) |
+| exp004     | AnySleepLF (late fusion, attention after decoder)   |
 
 ## Project Structure
 
@@ -236,7 +269,11 @@ anysleep/
 │   └── high-freq/          # Scripts to predict age/sex/OSA from high-frequency sleep stages
 ├── examples/                # Standalone usage examples
 │   ├── anysleep_no_hydra.py              # AnySleep model without Hydra dependencies
-│   └── predict_edf_file_logits_plain.py  # Predict sleep stages from EDF files
+│   ├── usleep_no_hydra.py                # U-Sleep model without Hydra dependencies
+│   ├── predict_edf_file_logits_plain.py  # Predict sleep stages from a single EDF file
+│   ├── anphy/ cap/ cnc/ dhc/             # Batch prediction for "external" datasets 
+│   ├── fhc/ ihc/ khc/ ssc/               # using all available channels per recording
+│   └── output/                           # Saved predictions per "external" dataset
 ├── requirements.txt
 └── experiments.md          # Experiment descriptions
 ```
@@ -256,8 +293,8 @@ All configuration files are located in the `config/` directory with the followin
 Configuration files lower in the hierarchy override parameters from higher-level files. All configurations can also be
 overwritten using command line arguments when running a script.
 
-To inspect the final resolved configuration of a run, check the `.hydra/` folder in the output directory after running
-a script.
+To inspect the final resolved configuration of a run, check the `.hydra/` folder in the output directory after running a
+script.
 
 ## Citation
 
