@@ -143,6 +143,15 @@ class AnySleepEvalDataset(BaseDataset):
             channels = eeg_channels + eog_channels
 
             if self.limit_num_samples_to is not None:
+                if self.channels is not None:
+                    eeg_ch_to_use = [ch for ch in eeg_channels if ch in self.channels]
+                    eog_ch_to_use = [ch for ch in eog_channels if ch in self.channels]
+                    logger.info(
+                        f"Limiting ds {dataset_name}, subj {subject_name} to channels: {eeg_ch_to_use+eog_ch_to_use}"
+                    )
+                    eeg_channels = eeg_ch_to_use
+                    eog_channels = eog_ch_to_use
+
                 if (
                     len(eeg_channels) < self.n_eeg_channels
                     or len(eog_channels) < self.n_eog_channels
@@ -150,6 +159,7 @@ class AnySleepEvalDataset(BaseDataset):
                     logger.warning(
                         f"Dataset {dataset_name} for subject {subject_name} has too few channels: {eeg_channels}, {eog_channels}"
                     )
+
                 sampled_eeg_ch = self.random_state.choice(
                     eeg_channels,
                     size=self.n_eeg_channels,

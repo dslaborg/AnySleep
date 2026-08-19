@@ -14,9 +14,6 @@ build/
 cache/
 .cache/
 
-# Logs
-logs
-
 # Config
 pyrightconfig.json
 
@@ -30,3 +27,5 @@ pyrightconfig.json
 
 # Local config
 .env
+
+sandbox

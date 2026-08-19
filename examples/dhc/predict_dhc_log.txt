@@ -1,0 +1,249 @@
+Processing N0022
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0077
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0057
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0044
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0020
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0033
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0079
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0043
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0075
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0081
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0054
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0056
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0061
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0029
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0051
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0053
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0038
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0055
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0070
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing N0045
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub25
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub68
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub05
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub59
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub141
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub94
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub34
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub60
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub42
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub80
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub53
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub115
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub45
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub04
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub54
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub14
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub76
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub149
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub07
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub100
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub86
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub19
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub18
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub103
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub48
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub28
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub73
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub43
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub63
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub136
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub36
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub01
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub105
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub104
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub44
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub108
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub88
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub135
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub23
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub93
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub50
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub124
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub143
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub112
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub116
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub58
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub144
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub89
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub64
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub84
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub57
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub61
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub13
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub74
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub118
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub49
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub122
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub125
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub132
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub113
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub87
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub101
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
+Processing Sub111
+Available channels: dict_keys(['__header__', '__version__', '__globals__', 'o1a2', 'chin', 'readme', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'ecg', 'o2a1', 'c4a1', 'f3a2', 'hypnogram'])
+Selected channels: dict_keys(['o1a2', 'c3a2', 'f4a1', 'eogla2', 'eogra1', 'o2a1', 'c4a1', 'f3a2'])
