@@ -8,8 +8,8 @@ multiple public sleep datasets.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/anysleep.git
-cd anysleep
+git clone https://github.com/dslaborg/AnySleep.git
+cd AnySleep
 
 # Install dependencies
 pip install -r requirements.txt
