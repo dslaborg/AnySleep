@@ -81,4 +81,12 @@ python scripts/evaluate.py -m -cn=exp002/exp002a training.trainer.evaluators=nul
 # sweep-2026-04-17_07-06-14_nchannels_mass_ood
 # MF1 vs. number of out-of-distribution mass channels -> Fig. S2 (scripts/final-figures/fig_s2.ipynb)
 python scripts/evaluate.py -m -cn=exp002/exp002a training.trainer.evaluators=null +training.trainer.evaluators.test="\${evaluators.test}" model.path="anysleep-run1.pth","anysleep-run2.pth","anysleep-run3.pth" +evaluators.test.result_tracker.n_channels="{_target_: base.results.anysleep_nchannels_ss_tracker.AnySleepNChannelsSSResultTracker, filename: anysleep_test_results_n_channels.json, track_datasplit: True, track_datasets: True, track_channels: False, track_recordings: True, do_majority_voting: False}" +data.test_dataloader.dataset.limit_num_samples_to=5000 data.test_dataloader.dataset.n_eeg_channels=0,1,2,3,4,5,6 data.test_dataloader.dataset.n_eog_channels=0,1 +data.test_dataloader.dataset.datasets_to_load="['mass-c1','mass-c3']" +data.test_dataloader.dataset.channels=['F7-CLE','F8-CLE','T5-CLE','T6-CLE','P3-CLE','P4-CLE','Fp1-CLE','Fp2-CLE','F7-LER','F8-LER','T5-LER','T6-LER','P3-LER','P4-LER','Fp1-LER','Fp2-LER','A2-LER','EOG(L)','EOG(R)']
+
+# sweep-2026-09-04_18-37-48_30s-soft-voting
+# Difference in MF1 between 30s predictions with model internal average pooling and soft majority voting of high-frequency predictions -> Fig. S5 (scripts/final-figures/fig_s5.ipynb)
+python scripts/predict-30s-from-high-freq.py -m -cn=exp002/exp002a +high_freq_predict.dataloader="\${data.test_dataloader}" +data.test_dataloader.dataset.datasets_to_load=['dodh','dodo','isruc-sg1','isruc-sg2','isruc-sg3','mass-c1','mass-c3','svuh'] model.path="anysleep-run1.pth","anysleep-run2.pth","anysleep-run3.pth" +model.sleep_stage_frequency=1,4,32,256,3840 +is_soft_voting=True
+
+# sweep-2026-09-04_18-37-55_30s-hard-voting
+# Difference in MF1 between 30s predictions with model internal average pooling and hard majority voting of high-frequency predictions -> Fig. S5 (scripts/final-figures/fig_s5.ipynb)
+python scripts/predict-30s-from-high-freq.py -m -cn=exp002/exp002a +high_freq_predict.dataloader="\${data.test_dataloader}" +data.test_dataloader.dataset.datasets_to_load=['dodh','dodo','isruc-sg1','isruc-sg2','isruc-sg3','mass-c1','mass-c3','svuh'] model.path="anysleep-run1.pth","anysleep-run2.pth","anysleep-run3.pth" +model.sleep_stage_frequency=1,4,32,256,3840 +is_soft_voting=False
 ```
