@@ -4,6 +4,8 @@ Research codebase for automatic sleep stage classification from EEG/EOG signals 
 implements the U-Sleep and AnySleep architectures and supports training/evaluation at various sampling frequencies on
 multiple public sleep datasets.
 
+If you want to use AnySleep without installation, please visit our free webapp SomnoBot: [somnobot.fh-aachen.de](https://somnobot.fh-aachen.de)
+
 ## Installation
 
 ```bash
@@ -47,7 +49,7 @@ git lfs pull
 To check which files are tracked by LFS and whether the real content or only the pointer is present locally, use:
 
 ```bash
-git lfs ls-files         # lists LFS-tracked files ('-': content, '*': pointer only)
+git lfs ls-files         # lists LFS-tracked files ('*': content, '-': pointer only)
 ```
 
 ## Inference on EDF Files
@@ -233,6 +235,34 @@ python scripts/predict-confusion-matrix.py -cn=exp002/exp002a \
 Output files:
 
 - `pred_cms.npz`: Confusion matrices per recording (shape per key: `(5, 5)`)
+
+#### predict-30s-from-high-freq.py
+
+Generates high-frequency per-subject sleep stage predictions and aggregates them into 30s labels using hard or soft majority voting.
+
+Arguments:
+
+- `-cn=<experiment>/<sub-experiment>`: name of the experiment configuration
+- `+high_freq_predict.dataloader`: dataloader configuration for the dataset to predict on
+- `model.path`: path to the model checkpoint to evaluate; either an absolute path or a relative path inside the
+  `models/` folder
+- `model.sleep_stage_frequency`: number of predictions per 30-second epoch (1, 2, 4, ..., 128)
+- `+is_soft_voting`: True=soft voting (mean of model outputs), False=hard voting (argmax of predicted classes)
+
+Sample call:
+
+```bash
+python scripts/predict-30s-from-high-freq.py -cn=exp002/exp002a \
+    +high_freq_predict.dataloader="\${data.test_dataloader}" \
+    model.path="your_model.pth" \
+    model.sleep_stage_frequency=4 \
+    +is_soft_voting=True
+```
+
+Output files:
+
+- `predictions.npz`: 30s predictions per subject
+- `labels.npz`: Ground truth labels per subject
 
 ### Experiments
 
