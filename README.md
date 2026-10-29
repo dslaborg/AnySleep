@@ -1,5 +1,7 @@
 # AnySleep
 
+⚠️ Due to their size, we are moving the experiment results from this repository into a dedicated Zenodo archive. Downloading the Git LFS files might currently fail. ⚠️
+
 Research codebase for automatic sleep stage classification from EEG/EOG signals using deep learning. This framework
 implements the U-Sleep and AnySleep architectures and supports training/evaluation at various sampling frequencies on
 multiple public sleep datasets.
