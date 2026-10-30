@@ -343,7 +343,7 @@ If you use this code in your research, please cite:
   ISSN = {2398-6352},
   url = {http://dx.doi.org/10.1038/s41746-026-03406-7},
   DOI = {10.1038/s41746-026-03406-7},
-  number = {1},
+  number = {829},
   journal = {npj Digital Medicine},
   publisher = {Springer Science and Business Media LLC},
   author = {Grieger,  Niklas and Raskob,  Jannik and Mehrkanoon,  Siamak and Bialonski,  Stephan},
