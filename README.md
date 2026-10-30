@@ -6,6 +6,10 @@ Research codebase for automatic sleep stage classification from EEG/EOG signals 
 implements the U-Sleep and AnySleep architectures and supports training/evaluation at various sampling frequencies on
 multiple public sleep datasets.
 
+AnySleep is described in:
+
+> Grieger, N., Raskob, J., Mehrkanoon, S. et al. AnySleep: a channel-agnostic deep learning system for high-resolution sleep staging in multi-center cohorts. npj Digit. Med. 9, 829 (2026). https://doi.org/10.1038/s41746-026-03406-7
+
 If you want to use AnySleep without installation, please visit our free webapp SomnoBot: [somnobot.fh-aachen.de](https://somnobot.fh-aachen.de)
 
 ## Installation
@@ -333,13 +337,18 @@ script.
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{Grieger2025,
-    title = {AnySleep: a channel-agnostic deep learning system for high-resolution sleep staging in multi-center cohorts},
-    author = {Niklas Grieger and Jannik Raskob and Siamak Mehrkanoon and Stephan Bialonski},
-    year = {2025},
-    eprint = {2512.14461},
-    archivePrefix = {arXiv},
-    url = {https://arxiv.org/abs/2512.14461},
+@article{Grieger2026,
+  title = {AnySleep: a channel-agnostic deep learning system for high-resolution sleep staging in multi-center cohorts},
+  volume = {9},
+  ISSN = {2398-6352},
+  url = {http://dx.doi.org/10.1038/s41746-026-03406-7},
+  DOI = {10.1038/s41746-026-03406-7},
+  number = {1},
+  journal = {npj Digital Medicine},
+  publisher = {Springer Science and Business Media LLC},
+  author = {Grieger,  Niklas and Raskob,  Jannik and Mehrkanoon,  Siamak and Bialonski,  Stephan},
+  year = {2026},
+  month = Oct 
 }
 ```
 
