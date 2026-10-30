@@ -1,6 +1,6 @@
 # AnySleep
 
-⚠️ Due to their size, we are moving the experiment results from this repository into a dedicated Zenodo archive. Downloading the Git LFS files might currently fail. ⚠️
+⚠️ Due to their size, we are moving the experiment results from this repository into a dedicated Zenodo archive. Downloading the Git LFS files might currently fail. The Zenodo archive with our experiment results is now available at: https://doi.org/10.5281/zenodo.23764134 ⚠️
 
 Research codebase for automatic sleep stage classification from EEG/EOG signals using deep learning. This framework
 implements the U-Sleep and AnySleep architectures and supports training/evaluation at various sampling frequencies on
@@ -343,12 +343,12 @@ If you use this code in your research, please cite:
   ISSN = {2398-6352},
   url = {http://dx.doi.org/10.1038/s41746-026-03406-7},
   DOI = {10.1038/s41746-026-03406-7},
-  number = {829},
+  article = {829},
   journal = {npj Digital Medicine},
   publisher = {Springer Science and Business Media LLC},
   author = {Grieger,  Niklas and Raskob,  Jannik and Mehrkanoon,  Siamak and Bialonski,  Stephan},
   year = {2026},
-  month = Oct 
+  month = oct 
 }
 ```
 
