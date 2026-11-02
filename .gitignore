@@ -29,3 +29,7 @@ pyrightconfig.json
 .env
 
 sandbox
+
+# Experiment results from the Zenodo archive, see README
+/logs/
+/examples/output/

@@ -1,7 +1,5 @@
 # AnySleep
 
-⚠️ Due to their size, we are moving the experiment results from this repository into a dedicated Zenodo archive. Downloading the Git LFS files might currently fail. The Zenodo archive with our experiment results is now available at: https://doi.org/10.5281/zenodo.23764134 ⚠️
-
 Research codebase for automatic sleep stage classification from EEG/EOG signals using deep learning. This framework
 implements the U-Sleep and AnySleep architectures and supports training/evaluation at various sampling frequencies on
 multiple public sleep datasets.
@@ -11,6 +9,10 @@ AnySleep is described in:
 > Grieger, N., Raskob, J., Mehrkanoon, S. et al. AnySleep: a channel-agnostic deep learning system for high-resolution sleep staging in multi-center cohorts. npj Digit. Med. 9, 829 (2026). https://doi.org/10.1038/s41746-026-03406-7
 
 If you want to use AnySleep without installation, please visit our free webapp SomnoBot: [somnobot.fh-aachen.de](https://somnobot.fh-aachen.de)
+
+The experiment results for our paper are archived on Zenodo: [https://doi.org/10.5281/zenodo.23764134](https://doi.org/10.5281/zenodo.23764134).
+This repository contains the code and the trained models; the sweep logs and prediction files were moved to that archive.
+See [Reproducing our results](#reproducing-our-results).
 
 ## Installation
 
@@ -24,38 +26,6 @@ pip install -r requirements.txt
 
 # Depending on your system, you might need to install PyTorch manually.
 # see https://pytorch.org/get-started/locally/
-```
-
-## Git LFS
-
-Log files, model checkpoints, and model outputs are stored with [Git LFS](https://git-lfs.com/) instead of directly in
-the repository.
-
-This means that a normal `git clone` only fetches small *pointer files* (a few hundred bytes) instead of the actual
-binary content. If you try to use these files directly, you will instead see LFS pointer text like the following:
-
-```text
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b41e3...
-size 123456789
-```
-
-To install Git LFS and configure your local git, run:
-
-```bash
-git lfs install
-```
-
-If you have already cloned (or pulled) before installing it, download the actual file contents with:
-
-```bash
-git lfs pull
-```
-
-To check which files are tracked by LFS and whether the real content or only the pointer is present locally, use:
-
-```bash
-git lfs ls-files         # lists LFS-tracked files ('*': content, '-': pointer only)
 ```
 
 ## Inference on EDF Files
@@ -96,8 +66,12 @@ The script handles preprocessing (resampling to 128 Hz, noise clipping, robust s
 
 To reproduce the results from the paper:
 
-1. Prepare the data using the [Sleep Datasets](https://github.com/dslaborg/Sleep-Datasets) repository
-2. Follow the instructions in `config/exp00X/run.md` for each experiment, which contain the exact commands for training
+1. Download the results archive from [Zenodo](https://doi.org/10.5281/zenodo.23764134) and unpack its `AnySleep/logs/`
+   and `AnySleep/examples/output/` folders into the repository root. These hold the prediction files that every script
+   in `scripts/final-figures` reads, so the paper figures and tables reproduce without the original datasets.
+2. To retrain or regenerate predictions yourself, prepare the data using the
+   [Sleep Datasets](https://github.com/dslaborg/Sleep-Datasets) repository
+3. Follow the instructions in `config/exp00X/run.md` for each experiment, which contain the exact commands for training
    and evaluation. Each command is mapped to an output dir in `logs` and a script in `scripts/final-figures` that uses
    the results.
 
@@ -294,7 +268,7 @@ anysleep/
 │   ├── base_config.yaml    # Default settings
 │   ├── usleep_split.yaml   # Datasplit used in the U-Sleep study
 │   └── exp001-exp004/      # Experiment-specific configs
-├── logs/                    # Outputs of the experiments
+├── logs/                    # Experiment results from the Zenodo archive (not tracked)
 ├── models/                  # Saved model weights
 ├── scripts/                 # Training, evaluation, and analysis scripts
 │   ├── train.py
