@@ -16,16 +16,32 @@ See [Reproducing our results](#reproducing-our-results).
 
 ## Installation
 
+We recommend setting up a fresh Python environment before installing AnySleep. You can do so with a package manager
+like [miniforge](https://github.com/conda-forge/miniforge): `mamba create -n anysleep python=3.11`.
+
+Afterward, you can install the required packages to run AnySleep from the provided requirements files:
+
 ```bash
 # Clone the repository
 git clone https://github.com/dslaborg/AnySleep.git
 cd AnySleep
 
-# Install dependencies
-pip install -r requirements.txt
+# activate the environment (if you used miniforge/conda for setup)
+mamba activate anysleep
 
-# Depending on your system, you might need to install PyTorch manually.
-# see https://pytorch.org/get-started/locally/
+# We recommend the following workflow to set up a working environment:
+# First, try installing the frozen requirements provided in this repo that have been confirmed working in our experiments
+pip install -r requirements.freeze.txt
+
+# If you get installation errors or torch is unable to find your GPU, install PyTorch manually following the instructions here: https://pytorch.org/get-started/locally/
+
+# If torch is still unable to find your GPU or there are other issues with the installed packages, do the following:
+# 1. Setup a fresh Python environment
+mamba create -n anysleep-fresh python=3.11
+mamba activate anysleep-fresh
+# 2. Manually install PyTorch following https://pytorch.org/get-started/locally/
+# 3. Install the required packages from the unversioned requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Inference on EDF Files
